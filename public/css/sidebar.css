@@ -1,0 +1,71 @@
+/* Estilos para el sidebar OL&D */
+.sidebar-ol {
+    width: 80px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #141922 60%, #0f6c2b 100%);
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    transition: width 0.3s;
+}
+.sidebar-ol.collapsed {
+    width: 60px;
+}
+.sidebar-ol .sidebar-logo {
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+.sidebar-ol .nav-icon {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 1.7rem;
+    transition: color 0.2s;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-ol .nav-icon:hover {
+    color: #3b82f6;
+}
+.sidebar-ol .nav-icon .sidebar-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background: #222;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 12px;
+    position: absolute;
+    left: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: 0.95rem;
+    z-index: 200;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+.sidebar-ol .nav-icon:hover .sidebar-tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+.sidebar-ol .sidebar-bottom {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+.menu-toggle {
+    position: absolute;
+    top: 10px;
+    left: 90px;
+    z-index: 200;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
